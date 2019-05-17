@@ -1,7 +1,7 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/605408/pexels-photo-605408.jpeg?cs=srgb&dl=alcoholic-beverages-bar-beverage-605408.jpg&fm=jpg);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/169391/pexels-photo-169391.jpeg?cs=srgb&dl=bar-bartender-beverage-169391.jpg&fm=jpg);">
 </div>
 
-<div class="container">
+<div class="container mt-5">
 
   <h1><%= @cocktail.name %></h1>
   <ul>
@@ -10,8 +10,18 @@
     <% end %>
   </ul>
   <div>
-    <%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail) %>
+    <%= link_to "Add ingredients", new_cocktail_dose_path(@cocktail), :class => "btn btn-primary" %>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <div>
     <%= link_to "Back to cocktails", cocktails_path %>
   </div>

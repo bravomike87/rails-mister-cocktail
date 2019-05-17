@@ -2,13 +2,12 @@
   <div class="container">
     <h1>Welcome to the Cocktail Bar!</h1>
     <p>You can <strong>create</strong> your own or just <strong>find</strong> a delicious one!</p>
-    <a class="btn btn-primary" href="#">Apply now</a>
+    <%= link_to "Create a cocktail", new_cocktail_path, :class => "btn btn-primary" %>
   </div>
 </div>
 
 
-<div class="container">
-
+<div class="container mt-5">
   <h1>Cocktails</h1>
 
   <ul>
@@ -21,5 +20,5 @@
   <br>
   <br>
   <br>
-  <%= link_to "Create a cocktail", new_cocktail_path %>
+
 </div>

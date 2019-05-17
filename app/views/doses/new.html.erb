@@ -1,7 +1,7 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/941864/pexels-photo-941864.jpeg?cs=srgb&dl=alcohol-bar-beer-941864.jpg&fm=jpg);">
 </div>
 
-<div class="container">
+<div class="container mt-5">
 
   <h1>Add ingredients and doses</h1>
 
@@ -10,9 +10,15 @@
     <%= f.input :ingredient_id, collection: @ingredients %>
     <%= f.submit "Add doses", class: "btn btn-primary" %>
   <% end %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <div>
     <%= link_to "Back to #{@cocktail.name}", cocktail_path(@cocktail) %>
   </div>
+  <br>
   <div>
     <%= link_to "Back to cocktails", cocktails_path %>
   </div>
