@@ -10,11 +10,16 @@
 <div class="container mt-5">
   <h1>Cocktails</h1>
 
-  <ul>
+<div class="row">
     <% @cocktails.each do |cocktail| %>
-      <li><%= link_to cocktail.name, cocktail_path(cocktail) %> <%= link_to "🚽", cocktail_path(cocktail), method: :delete %> </li>
+      <div class="card-category col-md-3 mt-3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.pexels.com/photos/1232152/pexels-photo-1232152.jpeg?cs=srgb&dl=alcoholic-beverage-beverage-citrus-1232152.jpg&fm=jpg)">
+        <%= link_to cocktail.name, cocktail_path(cocktail) %>
+      </div>
+      <div>
+        <%= link_to "🚽", cocktail_path(cocktail), method: :delete %>
+      </div>
     <% end %>
-  </ul>
+  </div>
   <br>
   <br>
   <br>
